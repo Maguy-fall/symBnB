@@ -2,6 +2,8 @@
 
 ## GIT / GITHUB
 
+### Initialiser le projet (au dépôt)
+
 Initialiser un dépôt :
 ```
 git init
@@ -10,6 +12,8 @@ Relier au dépôt distant (GitHub) :
 ```
 git remote add origin https://lien_vers_le_dépôt_GitHub"
 ```
+### Ajouter des nouveaux fichiers
+
 Ajouter les fichiers :
 ```
 git add *
