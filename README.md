@@ -1,5 +1,11 @@
 # BNB
 
+### Installation SYMFONY
+
+```
+cd chemin_vers_le_dossier_wamp_www
+```
+composer create-project symfony/website-skeleton nom_du_projet
 ## GIT / GITHUB
 
 ### Initialiser le projet (au dépôt)
@@ -26,3 +32,12 @@ Envoyer les fichiers :
 ```
 git push origin master
 ```
+
+
+### apache-pack
+-barre de débug  / routing :
+```
+composer require symfony/apache-pack
+
+```
+### Vider le cache 

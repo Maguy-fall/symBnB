@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
     <head>
+
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta name="description" content="site SymBnB">
+        <meta name= "viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Maguette FALL">
+
+        <title>SymBnB - {% block title %}base{% endblock %}</title>
+
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">{# asset pour viser le dossier
+        "public" #}
+        <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css>
+
+
+
+        
     </head>
     <body>
+    <footer>
+        <div class="container-fluid">
+           <div class="row text-center bg-dark text-white">
+              <div class="col-6 p-5 font-weight-light">
+                  <p class="font-weight-bold">Coordonn&eacute;es</p>
+                  <div class="dropdown-divider m-3"></div>
+                  <p>10 bis allée de la bergerie</p>
+                  <p>91150 Etampes</p>
+                  <p>06.52.48.26.52</p>
+                  <p>123456@gmail.com</p>
+           </div>
+           <div class="col-5 p-5 font-weight-light">
+                <p class="font-weight-bold">&Agrave; propos</p>
+                <div class="dropdown-divider m-3"></div>
+                <p>Nous mettons en relation les voyageurs et les propri&eacute;taires qui veulent
+                profiter d'opportunit&eacute;s et gagner de l'argent en proposant leur bien &agrave;
+                la location !</p>
+           </div>
+           <div class="col-12 p-3 font-weight-light">
+               Copyright &copy; symBnB 2020
+           </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         {% block body %}{% endblock %}
+        {% block stylesheets %}{% endblock %}
         {% block javascripts %}{% endblock %}
+       
     </body>
 </html>
